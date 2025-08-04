@@ -19,17 +19,25 @@ namespace OOP04
 
             #region P01 Q02
 
-            Rectangle r1 = new Rectangle();              
-            Rectangle r2 = new Rectangle(5, 10);      
-            Rectangle r3 = new Rectangle(7);          
+            //Rectangle r1 = new Rectangle();              
+            //Rectangle r2 = new Rectangle(5, 10);      
+            //Rectangle r3 = new Rectangle(7);          
 
-            Console.WriteLine($"r1: {r1.Width} x {r1.Height}");
-            Console.WriteLine($"r2: {r2.Width} x {r2.Height}");
-            Console.WriteLine($"r3: {r3.Width} x {r3.Height}");
+            //Console.WriteLine($"r1: {r1.Width} x {r1.Height}");
+            //Console.WriteLine($"r2: {r2.Width} x {r2.Height}");
+            //Console.WriteLine($"r3: {r3.Width} x {r3.Height}");
             #endregion
 
 
-            #region
+            #region P01 Q03
+            ComplexNumber num1 = new ComplexNumber(3, 4);  
+            ComplexNumber num2 = new ComplexNumber(1, 2);  
+
+            ComplexNumber sum = num1 + num2;    
+            ComplexNumber diff = num1 - num2;  
+
+            Console.WriteLine("Sum: " + sum);      
+            Console.WriteLine("Difference: " + diff); 
 
             #endregion
 
