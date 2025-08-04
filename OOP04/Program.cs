@@ -72,16 +72,37 @@ namespace OOP04
             #endregion
 
             #region  P02 Q02
-            Duration d1 = new Duration(1, 20, 30);
-            Duration d2 = new Duration(1, 20, 30);
-            Duration d3 = new Duration(0, 45, 10);
+            //Duration d1 = new Duration(1, 20, 30);
+            //Duration d2 = new Duration(1, 20, 30);
+            //Duration d3 = new Duration(0, 45, 10);
 
-            Console.WriteLine(d1.ToString());      
-            Console.WriteLine(d1.Equals(d2));        
-            Console.WriteLine(d1.Equals(d3));         
-            Console.WriteLine(d1.GetHashCode());     
-            Console.WriteLine(d2.GetHashCode());
+            //Console.WriteLine(d1.ToString());      
+            //Console.WriteLine(d1.Equals(d2));        
+            //Console.WriteLine(d1.Equals(d3));         
+            //Console.WriteLine(d1.GetHashCode());     
+            //Console.WriteLine(d2.GetHashCode());
             #endregion
+
+
+
+            #region P02 Q03
+            Duration D1 = new Duration(1, 10, 15);
+            Console.WriteLine(D1.ToString());
+
+            Duration D2 = new Duration(3600);
+            Console.WriteLine(D2.ToString());
+
+            Duration D3 = new Duration(7800);
+            Console.WriteLine(D3.ToString());
+
+            Duration D4 = new Duration(666);
+            Console.WriteLine(D4.ToString());
+            #endregion
+
+            #region P02 Q04
+
+            #endregion
+
 
         }
     }

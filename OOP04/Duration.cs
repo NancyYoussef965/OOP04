@@ -8,13 +8,13 @@ namespace OOP04
 {
     using System;
 
+    using System;
+
     public class Duration
     {
         public int Hours { get; set; }
         public int Minutes { get; set; }
         public int Seconds { get; set; }
-
-        public Duration() { }
 
         public Duration(int hours, int minutes, int seconds)
         {
@@ -23,26 +23,30 @@ namespace OOP04
             Seconds = seconds;
         }
 
+        public Duration(int totalSeconds)
+        {
+            if (totalSeconds >= 3600)
+            {
+                Hours = totalSeconds / 3600;
+                totalSeconds %= 3600;
+            }
+
+            Minutes = totalSeconds / 60;
+            Seconds = totalSeconds % 60;
+        }
+
         public override string ToString()
         {
-            return $"{Hours}h {Minutes}m {Seconds}s";
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (obj is Duration other)
+            if (Hours > 0)
             {
-                return this.Hours == other.Hours &&
-                       this.Minutes == other.Minutes &&
-                       this.Seconds == other.Seconds;
+                return $"Hours: {Hours}, Minutes :{Minutes}, Seconds :{Seconds}";
             }
-            return false;
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Hours, Minutes, Seconds);
+            else
+            {
+                return $"Minutes :{Minutes}, Seconds :{Seconds}";
+            }
         }
     }
+
 
 }
