@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace OOP04
 {
+    using System;
+
     public class Duration
     {
         public int Hours { get; set; }
         public int Minutes { get; set; }
         public int Seconds { get; set; }
 
-        public Duration()
-        {
-            Hours = 0;
-            Minutes = 0;
-            Seconds = 0;
-        }
+        public Duration() { }
 
         public Duration(int hours, int minutes, int seconds)
         {
@@ -26,9 +23,25 @@ namespace OOP04
             Seconds = seconds;
         }
 
-        public void Display()
+        public override string ToString()
         {
-            Console.WriteLine($"{Hours}h {Minutes}m {Seconds}s");
+            return $"{Hours}h {Minutes}m {Seconds}s";
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Duration other)
+            {
+                return this.Hours == other.Hours &&
+                       this.Minutes == other.Minutes &&
+                       this.Seconds == other.Seconds;
+            }
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Hours, Minutes, Seconds);
         }
     }
 

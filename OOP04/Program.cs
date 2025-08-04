@@ -64,15 +64,23 @@ namespace OOP04
             #endregion
 
             #region  P02 Q01
-            Duration d1 = new Duration();  
-            Duration d2 = new Duration(1, 30, 45); 
+            //Duration d1 = new Duration();  
+            //Duration d2 = new Duration(1, 30, 45); 
 
-            d1.Display();
-            d2.Display();
+            //d1.Display();
+            //d2.Display();
             #endregion
 
             #region  P02 Q02
+            Duration d1 = new Duration(1, 20, 30);
+            Duration d2 = new Duration(1, 20, 30);
+            Duration d3 = new Duration(0, 45, 10);
 
+            Console.WriteLine(d1.ToString());      
+            Console.WriteLine(d1.Equals(d2));        
+            Console.WriteLine(d1.Equals(d3));         
+            Console.WriteLine(d1.GetHashCode());     
+            Console.WriteLine(d2.GetHashCode());
             #endregion
 
         }
