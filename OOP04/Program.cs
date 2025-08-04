@@ -43,15 +43,31 @@ namespace OOP04
 
             #region P01 Q04
 
-            Employee emp = new Employee();
-            emp.Work(); 
+            //Employee emp = new Employee();
+            //emp.Work(); 
 
-            Manager mgr = new Manager();
-            mgr.Work();
+            //Manager mgr = new Manager();
+            //mgr.Work();
 
             #endregion
 
-            #region
+            #region  P01 Q05
+            //BaseClass b1 = new DerivedClass1();
+            //b1.DisplayMessage(); 
+
+            //BaseClass b2 = new DerivedClass2();
+            //b2.DisplayMessage();  
+
+            //DerivedClass2 d2 = new DerivedClass2();
+            //d2.DisplayMessage();
+
+            #endregion
+
+            #region  P01 Q04
+
+            #endregion
+
+            #region  P01 Q04
 
             #endregion
 
