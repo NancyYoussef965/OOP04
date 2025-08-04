@@ -63,11 +63,15 @@ namespace OOP04
 
             #endregion
 
-            #region  P01 Q04
+            #region  P02 Q01
+            Duration d1 = new Duration();  
+            Duration d2 = new Duration(1, 30, 45); 
 
+            d1.Display();
+            d2.Display();
             #endregion
 
-            #region  P01 Q04
+            #region  P02 Q02
 
             #endregion
 
